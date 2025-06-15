@@ -32,6 +32,7 @@
 
 body{
   background-color: var(--bg-primary);
+  width: 100%;
 }
 
 h1{
@@ -59,4 +60,22 @@ strong{
 
 button{
   font-family: var(--ff-inter);
+}
+
+main{
+  width: 871px;
+  height: 768px;
+  padding: 80px;
+}
+
+.logo{
+  display: flex;
+  margin-left: 1px;
+  width: 153px;
+  height: 48px;
+  align-items: center;
+  text-align: center;
+  position: initial ;
+  background-color: var(--bg-tertiary);
+  border-radius: 0px 0px 15px 0px;
 }

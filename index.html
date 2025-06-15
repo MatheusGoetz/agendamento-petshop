@@ -10,81 +10,83 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:opsz,wght@14..32,500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div>
+  <div class="logo">
     <img src="./src/assets/LOGO.SVG" alt="logo">
   </div>
   <main>
-    <header>
-      <h1>Sua agenda</h1>
-      <span>Aqui você pode ver todos os clientes e serviços agendados para hoje.</span>
-      <div class="data">
-      <i><img src="./src/assets/calendar.svg" alt="Calendário"></i>
-      <input type="date" name="date" required>
+    <header class="header-schedules">
+      <div class="title">
+        <h1>Sua agenda</h1>
+        <span>Aqui você pode ver todos os clientes e serviços agendados para hoje.</span>
+      </div>
+      <div class="input">
+        <i><img src="./src/assets/calendar.svg" alt="Calendário"></i>
+        <input type="date" name="date" id="date" required>
       </div>
     </header>
 
     <div >
-      <section>
+      <section class="morning-schedules">
         <header>
           <img src="./src/assets/morning.svg" alt="Manhã">
-          <strong>Manhã</strong>
-          <span>09h-12h</span>
+          <strong class="morning">Manhã</strong>
+          <span class="hours-morning">09h-12h</span>
         </header>
         <ul>
           <li>
-            <strong>09:00</strong>
-            <p>Lua</p>
-            <span>Ana Paula</span> 
-            <span>Banho</span>
-            <span>Remover agendamento</span>
+            <strong id="hour">09:00</strong>
+            <p id="name-pet">Lua</p>
+            <span id="name-person">Ana Paula</span> 
+            <span class="description-service">Banho</span>
+            <span id="remove-schedule">Remover agendamento</span>
           </li>
         </ul>
       </section>
 
-      <section>
+      <section class="afternoon-schedules">
         <header>
           <img src="./src/assets/afternoon.svg" alt="Tarde">
-          <strong>Tarde</strong>
-          <span>13h-18h</span>
+          <strong class="afternoon">Tarde</strong>
+          <span class="hours-afternoon">13h-18h</span>
         </header>
         <ul>
           <li>
-            <strong>13:00</strong>
-            <p>Luna</p>
-            <span>Ana Luisa</span> 
-            <span>Banho</span>
-            <span>Remover agendamento</span>
+            <strong id="hour">13:00</strong>
+            <p id="name-pet">Luna</p>
+            <span id="name-person">Ana Luisa</span> 
+            <span class="description-service">Banho</span>
+            <span id="remove-schedule">Remover agendamento</span>
           </li>
           <li>
-            <strong>14:00</strong>
-            <p>Donzela</p>
-            <span>Marcielle Goetz</span> 
-            <span>Banho e Tosa</span>
-            <span>Remover agendamento</span>
+            <strong id="hour">14:00</strong>
+            <p id="name-pet">Donzela</p>
+            <span id="name-person">Marcielle Goetz</span> 
+            <span class="description-service">Banho e Tosa</span>
+            <span id="remove-schedule">Remover agendamento</span>
           </li>
           <li>
-            <strong>16:00</strong>
-            <p>Pirata</p>
-            <span>Cintia Goetz</span>     
-            <span>Banho</span>
-            <span>Remover agendamento</span>
+            <strong id="hour">16:00</strong>
+            <p id="name-pet">Pirata</p>
+            <span id="name-person">Cintia Goetz</span>     
+            <span class="description-service">Banho</span>
+            <span id="remove-schedule">Remover agendamento</span>
           </li>
         </ul>
       </section>
 
-      <section>c 
+      <section class="night-schedules"> 
         <header>
           <img src="./src/assets/night.svg" alt="Noite">
-          <strong>Noite</strong>
-          <span>19h-21h</span>
+          <strong class="night">Noite</strong>
+          <span class="hours-night">19h-21h</span>
         </header>
         <ul>
           <li> 
-            <strong>20:00</strong>
-            <p>Dorytos</p>
-            <span>Tati Hartmann</span>
-            <span>Banho e corte de unha</span>
-            <span>Remover agendamento</span>
+            <strong id="hour">20:00</strong>
+            <p id="name-pet">Dorytos</p>
+            <span id="name-person">Tati Hartmann</span>
+            <span class="description-service">Banho e corte de unha</span>
+            <span id="remove-schedule">Remover agendamento</span>
           </li>
         </ul>
       </section>
