@@ -25,73 +25,84 @@
       </div>
     </header>
 
-    <div >
-      <section class="morning-schedules">
+    <div id="list-schedule">
+      <section class="schedules-section">
         <header>
-          <img src="./src/assets/morning.svg" alt="Manhã">
-          <strong class="morning">Manhã</strong>
+          <div>
+            <img id="img-morning" src="./src/assets/morning.svg" alt="Manhã">
+            <strong class="morning">Manhã</strong>
+          </div>
           <span class="hours-morning">09h-12h</span>
         </header>
         <ul>
           <li>
-            <strong id="hour">09:00</strong>
-            <p id="name-pet">Lua</p>
-            <span id="name-person">Ana Paula</span> 
+            <div>
+              <strong id="hour">09:00</strong>
+              <p><strong id="name-pet">Lua</strong>/<span id="name-person">Ana Paula</span></p>
+            </div>
             <span class="description-service">Banho</span>
             <span id="remove-schedule">Remover agendamento</span>
           </li>
         </ul>
       </section>
 
-      <section class="afternoon-schedules">
+      <section class="schedules-section">
         <header>
-          <img src="./src/assets/afternoon.svg" alt="Tarde">
-          <strong class="afternoon">Tarde</strong>
+          <div>
+            <img id="img-afternoon" src="./src/assets/afternoon.svg" alt="Tarde">
+            <strong class="afternoon">Tarde</strong>
+          </div>
           <span class="hours-afternoon">13h-18h</span>
         </header>
         <ul>
           <li>
-            <strong id="hour">13:00</strong>
-            <p id="name-pet">Luna</p>
-            <span id="name-person">Ana Luisa</span> 
+            <div>
+              <strong id="hour">13:00</strong>
+              <p><strong id="name-pet">Luna</strong>/<span id="name-person">Ana Luisa</span></p>
+            </div>
             <span class="description-service">Banho</span>
             <span id="remove-schedule">Remover agendamento</span>
           </li>
           <li>
-            <strong id="hour">14:00</strong>
-            <p id="name-pet">Donzela</p>
-            <span id="name-person">Marcielle Goetz</span> 
+            <div>
+              <strong id="hour">14:00</strong>
+              <p><strong id="name-pet">Donzela</strong>/<span id="name-person">Marcielle Goetz</span></p>
+            </div>
             <span class="description-service">Banho e Tosa</span>
             <span id="remove-schedule">Remover agendamento</span>
           </li>
           <li>
-            <strong id="hour">16:00</strong>
-            <p id="name-pet">Pirata</p>
-            <span id="name-person">Cintia Goetz</span>     
+            <div>
+              <strong id="hour">16:00</strong>
+              <p><strong id="name-pet">Pirata</strong>/<span id="name-person">Cintia Goetz</span></p>
+            </div>    
             <span class="description-service">Banho</span>
             <span id="remove-schedule">Remover agendamento</span>
           </li>
         </ul>
       </section>
 
-      <section class="night-schedules"> 
+      <section class="schedules-section"> 
         <header>
-          <img src="./src/assets/night.svg" alt="Noite">
-          <strong class="night">Noite</strong>
+          <div>
+            <img id="img-night" src="./src/assets/night.svg" alt="Noite">
+            <strong class="night">Noite</strong>
+          </div>
           <span class="hours-night">19h-21h</span>
         </header>
         <ul>
           <li> 
-            <strong id="hour">20:00</strong>
-            <p id="name-pet">Dorytos</p>
-            <span id="name-person">Tati Hartmann</span>
+            <div>
+              <strong id="hour">20:00</strong>
+              <p><strong id="name-pet">Dorytos</strong>/<span id="name-person">Tati Hartmann</span></p>
+            </div>
             <span class="description-service">Banho e corte de unha</span>
             <span id="remove-schedule">Remover agendamento</span>
           </li>
         </ul>
       </section>
     </div>
+    <button id="new-schedule">Novo agendamento</button>
   </main>
-  <button>Novo agendamento</button>
 </body> 
 </html>
