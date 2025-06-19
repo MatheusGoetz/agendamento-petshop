@@ -10,9 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:opsz,wght@14..32,500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="logo">
-    <img src="./src/assets/LOGO.SVG" alt="logo">
-  </div>
+    <img src="./src/assets/logo-1.svg" alt="logo" class="logo">
   <main>
     <header class="header-schedules">
       <div class="title">
@@ -103,6 +101,59 @@
       </section>
     </div>
     <button id="new-schedule">Novo agendamento</button>
+
+    <dialog>
+      <header>
+        <h2>Agende um atendimento</h2>
+        <span>Preencha os dados do cliente para realizar o agendamento:</span>
+      </header>
+
+      <form>
+        <label>Nome do titular</label>
+        <div class="input-form">
+          <img src="./src/assets/person.svg" alt="Pessoa">
+          <input type="text" name="person-schedule" id="person-schedule" placeholder="informe o nome do titular..." required>
+        </div>
+        
+        <label>Nome do pet</label>
+        <div class="input-form">
+          <img src="./src/assets/pet.svg" alt="pata de pet">
+          <input type="text" name="pet-schedule" id="pet-schedule" placeholder="Informe o nome do pet..." required>
+        </div>
+
+        <label>Telefone</label>
+        <div class="input-form">
+          <img src="./src/assets/phone.svg" alt="telefone">
+          <input type="tel" name="phone" id="phone" placeholder="(xx) x xxxx-xxxx" required>
+        </div>
+
+        <label>Descrição da tarefa</label>
+        <div>
+          <textarea name="service-schedule" id="service-schedule" required></textarea>
+        </div>
+
+        <div id="hour-date">
+          <div>
+            <label>Data</label>
+            <div class="hour-form">
+              <img src="./src/assets/calendar.svg" alt="Calendário">
+              <input type="date" name="date-schedule" id="date-schedule" required>
+            </div>
+          </div>
+          <div>
+            <label>Hora</label>
+            <div class="date-form"> 
+              <img src="./src/assets/clock.svg" alt="relógio">
+              <input type="time" name="hour-schedule" id="hour-schedule" required>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" id="schedule">AGENDAR</button>
+      </form>
+    </dialog>
+
   </main>
+  <script src="./src/form/dialog.js"></script>
 </body> 
 </html>

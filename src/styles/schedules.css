@@ -75,10 +75,6 @@
   }
 }
 
-#img-morning{
-  fill: var(--accent-blue);
-}
-
 .schedules-section ul{
   margin: 0px 18px
 }
@@ -110,6 +106,16 @@
 
 .description-service{
   width: 219.5px;
+}
+
+#remove-schedule{
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+#remove-schedule:hover{
+  color: var(--content-primary);
+  text-decoration: underline;
 }
 
 #new-schedule{

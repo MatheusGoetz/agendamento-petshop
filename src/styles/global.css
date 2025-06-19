@@ -34,6 +34,7 @@ body{
   background-color: var(--bg-primary);
   width: 1366px;
   height: 768px;
+  overflow: hidden;
 }
 
 h1{
@@ -67,18 +68,6 @@ main{
   width: 871px;
   height: 768px;
   margin-left: 328px;
-}
-
-.logo{
-  display: flex;
-  padding: 1rem;
-  width: 153px;
-  height: 48px;
-  align-items: center;
-  text-align: center;
-  position: initial ;
-  background-color: var(--bg-tertiary);
-  border-radius: 0px 0px 15px 0px;
 }
 
 #list-schedule{
