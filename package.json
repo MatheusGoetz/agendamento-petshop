@@ -1,4 +1,7 @@
 {
+  "name": "Mundo pet",
+  "description": "Aplicativo web de agendamento para serviços para petshop",
+  "author": "Matheus Goetz Oyarzabal",
   "scripts": {
     "server": "json-server --watch server.js --port 3333"
   },
