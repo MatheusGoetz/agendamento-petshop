@@ -10,4 +10,6 @@ import "./styles/form-schedule.css"
 
 // JS
 
+import "./modules/form/dialog.js"
 import "./modules/form/submit.js"
+

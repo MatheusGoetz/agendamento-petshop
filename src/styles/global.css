@@ -32,8 +32,8 @@
 
 body{
   background-color: var(--bg-primary);
-  width: 1366px;
-  height: 768px;
+  width: auto;
+  height: auto;
   overflow: hidden;
 }
 
@@ -68,9 +68,16 @@ main{
   width: 871px;
   height: 768px;
   margin: auto;
-  margin-left: 328px;
+  margin-left: 375px;
 }
 
 #list-schedule{
   width: 711px;
+}
+
+@media screen and (min-width: 1280px) {
+  main{
+    margin: auto;
+    margin-left: 312px;
+  }
 }
