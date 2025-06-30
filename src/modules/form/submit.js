@@ -15,5 +15,4 @@ selectedDate.min = inputToday;
 form.onsubmit = (event) => {
   event.preventDefault();
   schedulesForm()
-  console.log("enviado!");
 }

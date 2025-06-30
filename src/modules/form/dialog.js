@@ -5,7 +5,3 @@ const schedule = document.getElementById("schedule");
 button.onclick = function(){
   modal.showModal();
 }
-
-schedule.onclick = function(){
-  modal.closeModal();
-}
