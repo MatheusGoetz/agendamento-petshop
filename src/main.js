@@ -12,4 +12,4 @@ import "./styles/form-schedule.css"
 
 import "./modules/form/dialog.js"
 import "./modules/form/submit.js"
-
+import "./modules/page-load.js"

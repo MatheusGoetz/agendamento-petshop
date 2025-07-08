@@ -35,11 +35,11 @@
         <ul>
           <li>
             <div>
-              <strong id="hour">09:00</strong>
-              <p><strong id="name-pet">Lua</strong>/<span id="name-person">Ana Paula</span></p>
+              <strong class="hour">09:00</strong>
+              <p><strong class="name-pet">Lua</strong>/<span class="name-person">Ana Paula</span></p>
             </div>
             <span class="description-service">Banho</span>
-            <span id="remove-schedule">Remover agendamento</span>
+            <span class="remove-schedule">Remover agendamento</span>
           </li>
         </ul>
       </section>
@@ -55,27 +55,27 @@
         <ul>
           <li>
             <div>
-              <strong id="hour">13:00</strong>
-              <p><strong id="name-pet">Luna</strong>/<span id="name-person">Ana Luisa</span></p>
+              <strong class="hour">13:00</strong>
+              <p><strong clas="name-pet">Luna</strong>/<span class="name-person">Ana Luisa</span></p>
             </div>
             <span class="description-service">Banho</span>
-            <span id="remove-schedule">Remover agendamento</span>
+            <span class="remove-schedule">Remover agendamento</span>
           </li>
           <li>
             <div>
-              <strong id="hour">14:00</strong>
-              <p><strong id="name-pet">Donzela</strong>/<span id="name-person">Marcielle Goetz</span></p>
+              <strong class="hour">14:00</strong>
+              <p><strong class="name-pet">Donzela</strong>/<span class="name-person">Marcielle Goetz</span></p>
             </div>
             <span class="description-service">Banho e Tosa</span>
-            <span id="remove-schedule">Remover agendamento</span>
+            <span class="remove-schedule">Remover agendamento</span>
           </li>
           <li>
             <div>
-              <strong id="hour">16:00</strong>
-              <p><strong id="name-pet">Pirata</strong>/<span id="name-person">Cintia Goetz</span></p>
+              <strong class="hour">16:00</strong>
+              <p><strong class="name-pet">Pirata</strong>/<span class="name-person">Cintia Goetz</span></p>
             </div>    
             <span class="description-service">Banho</span>
-            <span id="remove-schedule">Remover agendamento</span>
+            <span class="remove-schedule">Remover agendamento</span>
           </li>
         </ul>
       </section>
@@ -91,11 +91,11 @@
         <ul>
           <li> 
             <div>
-              <strong id="hour">20:00</strong>
-              <p><strong id="name-pet">Dorytos</strong>/<span id="name-person">Tati Hartmann</span></p>
+              <strong class="hour">20:00</strong>
+              <p><strong clas="name-pet">Dorytos</strong>/<span class="name-person">Tati Hartmann</span></p>
             </div>
             <span class="description-service">Banho e corte de unha</span>
-            <span id="remove-schedule">Remover agendamento</span>
+            <span class="remove-schedule">Remover agendamento</span>
           </li>
         </ul>
       </section>
@@ -135,16 +135,45 @@
         <div id="hour-date">
           <div>
             <label>Data</label>
-            <div class="hour-form">
+            <div class="date-form">
               <img src="./src/assets/calendar.svg" alt="Calendário">
               <input type="date" name="date-schedule" id="date-schedule" required>
             </div>
           </div>
           <div>
             <label>Hora</label>
-            <div class="date-form"> 
+            <div class="hour-form"> 
               <img src="./src/assets/clock.svg" alt="relógio">
-              <input type="time" name="hour-schedule" id="hour-schedule" required>
+              <select name="hour-schedule" id="hour-schedule" required>
+                <option value="">--:--</option>
+                <!--
+                <option label="08:00" value="08:00">
+                <option label="08:30" value="08:30">
+                <option label="09:00" value="09:00">
+                <option label="09:30" value="09:30">
+                <option label="10:00" value="10:00">
+                <option label="10:30" value="10:30">
+                <option label="11:00" value="11:00">
+                <option label="11:30" value="11:30">
+                <option label="12:00" value="12:00">
+                <option label="12:30" value="12:30">
+                <option label="13:00" value="13:00">
+                <option label="13:30" value="13:30">
+                <option label="14:00" value="14:00">
+                <option label="14:00" value="14:30">
+                <option label="15:00" value="15:00">
+                <option label="15:30" value="15:30">
+                <option label="16:00" value="16:00">
+                <option label="16:30" value="16:30">
+                <option label="17:00" value="17:00">
+                <option label="17:30" value="17:30">
+                <option label="18:00" value="18:00">
+                <option label="18:30" value="18:30">
+                <option label="19:00" value="19:00">
+                <option label="19:30" value="19:30">
+                <option label="20:00" value="20:00">
+                -->
+              </select>
             </div>
           </div>
         </div>

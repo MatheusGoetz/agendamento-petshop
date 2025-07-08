@@ -96,11 +96,11 @@
   }
 }
 
-#name-pet{
+.name-pet{
   padding: 0.365rem;
 }
 
-#name-person{
+.name-person{
   padding: 0.365rem;
 }
 
@@ -108,12 +108,12 @@
   width: 219.5px;
 }
 
-#remove-schedule{
+.remove-schedule{
   cursor: pointer;
   transition: color 0.2s ease;
 }
 
-#remove-schedule:hover{
+.remove-schedule:hover{
   color: var(--content-primary);
   text-decoration: underline;
 }

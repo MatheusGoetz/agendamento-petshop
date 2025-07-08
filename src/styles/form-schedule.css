@@ -90,32 +90,6 @@ form label{
   gap: 1rem;
 }
 
-.hour-form{
-  display: flex;
-  align-items: center;
-  padding-left: 0.5rem;
-  border: 1px solid var(--border-divisor);
-  border-radius: 8px;
-  height: 48px;
-  transition:border 1000ms ease;
-}
-
-.hour-form input{
-  margin-left: 0.5rem;
-  background-color: transparent;
-  width: 100%;
-  padding-right: 5px;
-
-  color: var(--content-primary);
-
-  outline: none;
-  border: none;
-}
-
-.hour-form:hover{
-  border: 1px solid var(--border-secondary);
-}
-
 .date-form{
   display: flex;
   align-items: center;
@@ -159,3 +133,51 @@ dialog form button:hover{
   cursor: pointer;
   background-color: var(--bg-highlights);
 }
+
+#hour-schedule{
+  cursor: pointer;
+  align-items: center;
+  padding-left: 0.5rem;
+  border-radius: 8px;
+  width: 100%;
+  height: 48px;
+  transition:border 1000ms ease;
+  border: transparent;
+  background-color: var(--bg-tertiary);
+  color: var(--content-primary);
+  
+  appearance: none;
+
+  outline: none;
+  border: none;
+}
+
+.hour-form{
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  border: 1px solid var(--border-divisor);
+  border-radius: 8px;
+  height: 50px;
+  transition:border 1000ms ease;
+
+  outline: none;
+}
+
+.hour-form:hover{
+  border: 1px solid var(--border-secondary);
+}
+
+.hour-form:focus-within{
+  border: 1px solid var(--content-brand);
+}
+
+.hour-available{
+  cursor: pointer;
+}
+
+.hour-unavailable:disabled{
+  color: gray;
+  background-color: #f0f0f0;
+}
+
