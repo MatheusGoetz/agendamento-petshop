@@ -1,5 +1,7 @@
 import dayjs from "dayjs"
 
+import { scheduleNew } from "../../services/schedule-new.js"
+
 const namePerson = document.getElementById("person-schedule")
 const petName = document.getElementById("pet-schedule")
 const phone = document.getElementById("phone")
@@ -7,18 +9,20 @@ const serviceSchedule = document.getElementById("service-schedule")
 const dateSchedule = document.getElementById("date-schedule")
 const hourSelected = document.getElementById("hour-schedule")
 
-phone.addEventListener('input', function (phone) {
-  let value = phone.target.value
-  value = value.replace(/\D/g, '')
-  value = value.replace(/^(\d{2})(\d)/g, '($1) $2')
-  value = value.replace(/(\d)(\d{4})$/, '$1-$2');
-  phone.target.value = value
-})
+
 
 dateSchedule.value = dayjs().format("YYYY/MM/DD")
 
 export async function schedulesForm() {
   try {
+    phone.addEventListener('input', function (phone) {
+      let value = phone.target.value
+      value = value.replace(/\D/g, '')
+      value = value.replace(/^(\d{2})(\d)/g, '($1) $2')
+      value = value.replace(/(\d)(\d{4})$/, '$1-$2');
+      phone.target.value = value
+    })
+
     const namePeople = namePerson.value.trim()
     const namePet = petName.value.trim() 
     const service = serviceSchedule.value
@@ -42,13 +46,12 @@ export async function schedulesForm() {
     const when = dayjs(date).add(hour, "hour")
     const id = new Date().getTime()
 
-    console.log({
+    await scheduleNew({
       id,
       namePeople,
       namePet,
+      phone,
       service,
-      date,
-      hour,
       when,
     })
 
