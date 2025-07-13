@@ -20,6 +20,8 @@ export function scheduleShow({dailySchedules}){
       const service = document.createElement("span");
       const remove = document.createElement("span");
 
+      item.setAttribute("data-id", schedule.id)
+
       time.classList.add("hour")
       time.textContent = dayjs(schedule.when). format("HH:mm")
 
