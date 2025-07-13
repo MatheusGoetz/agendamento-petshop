@@ -1,6 +1,7 @@
 import dayjs from "dayjs"
 
 import { scheduleNew } from "../../services/schedule-new.js"
+import { schedulesDay } from "../schedules/load.js"
 
 const namePerson = document.getElementById("person-schedule")
 const petName = document.getElementById("pet-schedule")
@@ -54,6 +55,8 @@ export async function schedulesForm() {
       service,
       when,
     })
+
+    await schedulesDay()
 
   } catch (error) {
     console.log(error);
